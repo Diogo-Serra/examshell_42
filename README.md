@@ -1,12 +1,12 @@
 # 42 Exam Practice Shell
 
-⚡ An interactive practice environment for 42 School exams (Ranks 02-05) ⚡
+An interactive practice environment for 42 School exams (Ranks 02-05)
 
-## 📋 Overview
+## Overview
 
 This project provides a comprehensive practice shell for 42 School examinations, offering interactive menus and practice exercises for different exam ranks. The shell simulates the actual exam environment and helps students prepare effectively.
 
-## 🚀 Features
+## Features
 
 - **Interactive Menu System**: Clean, colorful terminal interface
 - **Multiple Exam Ranks**: Support for Ranks 02, 03, 04 and 05
@@ -14,7 +14,7 @@ This project provides a comprehensive practice shell for 42 School examinations,
 - **Command Practice**: Built-in command reference and practice
 - **Easy Navigation**: Simple numbered menu system
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -29,7 +29,7 @@ This project provides a comprehensive practice shell for 42 School examinations,
     └── rank05/       # Rank 05 exam exercises
 ```
 
-## 🔧 Installation & Usage
+## Installation & Usage
 
 ### Quick Start
 
@@ -52,14 +52,14 @@ This project provides a comprehensive practice shell for 42 School examinations,
 
 The main menu provides the following options:
 
-- **🔄 1. Commands**: Access command reference and practice
-- **🚀 2. Exam Rank 02**: Practice exercises for Rank 02 exam
-- **📋 3. Exam Rank 03**: Practice exercises for Rank 03 exam  
-- **📄 4. Exam Rank 04**: Practice exercises for Rank 04 exam
-- **📄 5. Exam Rank 05**: Practice exercises for Rank 05 exam
-- **📁 6. Open Rendu Folder**: Access your submission workspace
+- **1. Commands**: Access command reference and practice
+- **2. Exam Rank 02**: Practice exercises for Rank 02 exam
+- **3. Exam Rank 03**: Practice exercises for Rank 03 exam  
+- **4. Exam Rank 04**: Practice exercises for Rank 04 exam
+- **5. Exam Rank 05**: Practice exercises for Rank 05 exam
+- **6. Open Rendu Folder**: Access your submission workspace
 
-## 💡 How to Use
+## How to Use
 
 1. Launch the application using `make` or `bash exam.sh`
 2. Select your desired exam rank or practice option
@@ -67,47 +67,49 @@ The main menu provides the following options:
 4. Complete exercises in the automatically created `rendu` folder
 5. Use the practice environment to simulate real exam conditions
 
-## 📝 Workspace
+## Workspace
 
 The shell automatically creates a `rendu` folder where you can:
 - Write your solutions
 - Test your code
 - Practice exam submissions
 
-## 🎯 Target Audience
+## Target Audience
 
 This tool is designed for:
 - 42 School students preparing for exams
 - Anyone practicing C programming and system administration
 - Students wanting to simulate exam conditions
 
-## ⚙️ Requirements
+## Requirements
 
 - Bash shell
 - Unix-like operating system (Linux/macOS)
 - Terminal with color support (recommended)
 
-## 🔄 Updates
+## Updates
 
 The project includes update mechanisms to keep practice materials current with the latest exam requirements.
 
-## 📚 Exam Ranks Covered
+## Exam Ranks Covered
 
 - **Rank 02**: Fundamental C programming concepts
 - **Rank 03**: Advanced C programming and system calls
 - **Rank 04**: Complex algorithms and data structures
 - **Rank 05**: Advanced C++ programming and object-oriented design
 
-## 🤝 Contributing
+## Contributing
 
 This is a practice tool for 42 School students. Contributions and improvements are welcome to enhance the learning experience.
 
-## 📧 Support
+## Support
 
 For issues or questions regarding the practice environment, please refer to your 42 School resources or community.
 
----
+## Acknowledgments
 
-**Good luck with your exams! 🍀**
+This project is based on the original [42_examshell](https://github.com/terminal-42s/42_examshell) by terminal-42s. Thank you for creating this valuable resource for the 42 School community.
+
+---
 
 *Made for 42 School students by 42 School students*
