@@ -1,0 +1,6 @@
+../../../../rendu/max/max.c: In function ‘max’:
+../../../../rendu/max/max.c:20:18: error: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Werror=sign-compare]
+   20 |         while (i < len)
+      |                  ^
+cc1: all warnings being treated as errors
+[32m[1mPASSED 🎉(B[0m

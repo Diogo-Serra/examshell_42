@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diosoare <diosoare@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/11 15:06:43 by diosoare          #+#    #+#             */
-/*   Updated: 2026/02/11 15:16:50 by diosoare         ###   ########.fr       */
+/*   Created: 2026/02/11 16:31:53 by diosoare          #+#    #+#             */
+/*   Updated: 2026/02/11 16:34:32 by diosoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-int	ft_strcmp(char *s1, char *s2)
+char *ft_strcpy(char *dst, char *src)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while (s1[i])
+	while (src[i])
 	{
-		if (s1[i] != s2[i])
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+		dst[i] = src[i];
 		i++;
 	}
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	dst[i] = '\0';
+	return (dst);
 }

@@ -1,41 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ulstr.c                                            :+:      :+:    :+:   */
+/*   epur_str.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diosoare <diosoare@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/11 14:59:25 by diosoare          #+#    #+#             */
-/*   Updated: 2026/02/11 15:06:22 by diosoare         ###   ########.fr       */
+/*   Created: 2026/02/11 16:38:57 by diosoare          #+#    #+#             */
+/*   Updated: 2026/02/11 18:40:43 by diosoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <unistd.h>
 
 int	main(int argc, char **argv)
 {
-	int	i;
-
+	int i;
+	
 	if (argc == 2)
 	{
 		i = 0;
 		while (argv[1][i])
 		{
-			if (argv[1][i] >= 'A' && argv[1][i] <= 'Z')
-			{
-				argv[1][i] += 32;
+			while (argv[1][i] == ' ' || (argv[1][i] >= 9 && argv[1][i] <= 13))
+				i++;
+			while (argv[1][i] && argv[1][i] != ' ')
 				write(1, &argv[1][i++], 1);
-			}	
-			else if (argv[1][i] >= 'a' && argv[1][i] <= 'z')
+			while (argv[1][i] == ' ' || (argv[1][i] >= 9 && argv[1][i] <= 13))
 			{
-				argv[1][i] -= 32;
-				write(1, &argv[1][i++], 1);
+				if (argv[1][i + 1] != ' ' && argv[1][i + 1])
+					write(1, " ", 1);
+				i++;
 			}
-			else
-				write(1, &argv[1][i++], 1);				
 		}
-		write(1, "\n", 1);			
+		write(1, "\n", 1);		
 	}
 	else
 		write(1, "\n", 1);
