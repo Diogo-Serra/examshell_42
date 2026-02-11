@@ -35,7 +35,7 @@ This project provides a comprehensive practice shell for 42 School examinations,
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/terminal-42s/42_examshell
+   git clone https://github.com/Diogo-Serra/examshell_42.git
    cd 42_examshell
 
 2. **Run the exam shell**:
