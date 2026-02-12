@@ -1,0 +1,8 @@
+../../../../rendu/rotone/rotone.c: In function ‘main’:
+../../../../rendu/rotone/rotone.c:28:52: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+   28 |                         else if (argv[1][i] >= 'A' && argv[1][i] <= 'Z' ||
+      |                                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+[31m[1mFAIL(B[0m
+[32mExpected Output:(B[m "M'fTQsju oF qfVu qmVt qSphSftTfs t'Jm tubHof fu tJ qfStJtUfou WBoJuf fu bvup-kvtujgjdbujpo."
+[31mYour Output:(B[m     ""
