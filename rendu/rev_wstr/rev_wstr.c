@@ -6,7 +6,7 @@
 /*   By: diosoare <diosoare@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/12 21:03:48 by diosoare          #+#    #+#             */
-/*   Updated: 2026/02/12 21:40:20 by diosoare         ###   ########.fr       */
+/*   Updated: 2026/02/12 21:43:47 by diosoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 int	main(int argc, char **argv)
 {
 	int	i;
+	int	j;
 	int start;
 	int	end;
 
@@ -23,6 +24,7 @@ int	main(int argc, char **argv)
 		i = 0;
 		while (argv[1][i])
 			i++;
+		i--;
 		while (i >= 0)
 		{
 			while (i >= 0 && (argv[1][i] == ' ' || argv[1][i] == '\t'))
@@ -33,7 +35,7 @@ int	main(int argc, char **argv)
 			start = i + 1;
 			if (start <= end)
 			{
-				int j = start;
+				j = start;
 				while (j <= end)
 					write(1, &argv[1][j++], 1);
 				if (i >= 0)
